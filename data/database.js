@@ -9,6 +9,12 @@ const dbName = process.env.MONGODB_DB_NAME;
 const uri = `${connectionProtocol}://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri);
 
+console.log(dbName);
+console.log(dbUser);
+console.log(dbPassword);
+console.log(clusterAddress);
+
+
 console.log('Trying to connect to db');
 
 try {
